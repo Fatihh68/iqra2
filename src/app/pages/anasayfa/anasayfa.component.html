@@ -1,0 +1,166 @@
+<!-- anasayfa.component.html -->
+<main style="margin-top: 0; margin-bottom: 0">
+  <!-- HERO (fixed, two-column grid, no wrapping) -->
+  <section class="hero alignfull">
+    <div class="wp-block-columns hero-grid">
+      <div class="wp-block-column">
+        <div class="hero-copy">
+          <span class="eyebrow">Bağımsız • Sertifikalı • Güvenli</span>
+          <h1>
+            Kur’an’ı <span class="underline">canlı</span> öğrenin — birebir veya
+            küçük grupta, sizin temponuzda
+          </h1>
+
+          <ul class="hero-bullets">
+            <li>
+              🎓 Belgeli ve deneyimli hocalar — tarikatsız, bağımsız eğitim
+            </li>
+            <li>🕒 Esnek saatler: akşam / hafta sonu seçenekleri</li>
+            <li>📈 Hedefe yönelik plan + düzenli ilerleme takibi</li>
+          </ul>
+
+          <div class="cta-row">
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/436704053959"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp’tan
+              hızlı bilgi alın
+            </a>
+            <a class="btn btn-outline" [routerLink]="['/hizmetlerimiz']">
+              Hizmetlerimizi görüntüle
+            </a>
+          </div>
+
+          <div class="trust-strip">
+            <span class="trust-pill"
+              ><i class="fas fa-lock" aria-hidden="true"></i> Güvenli
+              ödeme</span
+            >
+            <span class="trust-pill"
+              ><i class="fas fa-user-shield" aria-hidden="true"></i> GDPR/KVKK
+              uyumlu</span
+            >
+            <span class="trust-pill"
+              ><i class="fas fa-certificate" aria-hidden="true"></i> Sertifikalı
+              eğitim</span
+            >
+            <span class="trust-pill"
+              ><i class="fas fa-video" aria-hidden="true"></i> Canlı ders</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="wp-block-column hero-visual">
+        <img src="assets/tesbih_hali_ipad.jpg" alt="Online Kur’an dersi" />
+        <div class="hero-badge">
+          <strong>Katılım Belgesi</strong>
+          <small>Ders bitiminde dijital teslim</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section (reworked) -->
+  <section class="section section--muted">
+    <div class="container about-grid">
+      <div class="about-copy">
+        <h2 class="section-title">Hakkımızda ve Amacımız</h2>
+        <p class="section-lead">
+          Ikra olarak, kaliteli ve bağımsız Kur’an eğitimi sunuyoruz. Hiçbir
+          tarikat veya kuruluş ile bağlantımız yoktur. Türk ve Avrupa eğitimi
+          görmüş öğretmenlerimizle bilginizi artırmayı ve manevi gelişiminize
+          katkıda bulunmayı hedefliyoruz. Her yerden esnek ve rahat öğrenme
+          imkânı sunarak Kur’an eğitimini herkes için erişilebilir hale
+          getiriyoruz.
+        </p>
+
+        <ul class="about-points">
+          <li>
+            <i class="fas fa-user-check" aria-hidden="true"></i> Belgeli ve
+            deneyimli hocalar
+          </li>
+          <li>
+            <i class="fas fa-user-shield" aria-hidden="true"></i> GDPR/KVKK
+            uyumlu süreçler
+          </li>
+          <li>
+            <i class="fas fa-clock" aria-hidden="true"></i> Esnek saatler ve
+            birebir/mini grup
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-visual">
+        <figure class="about-figure">
+          <img src="assets/basörtülü_mit_laptop.jpg" alt="Hakkımızda" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings Section (reworked) -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">7’den 70’e Kur’an Kurslarımız</h2>
+      <p class="section-lead">
+        Her seviyeye uygun; birebir, küçük grup ve yoğunlaştırılmış programlar.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">
+            <i class="fas fa-user-graduate" aria-hidden="true"></i>
+          </div>
+          <h3 class="card-title">Bireysel Kur’an Kursları</h3>
+          <p class="card-text">
+            Hedefinize özel plan, haftalık ilerleme takibi ve düzenli geri
+            bildirim.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+          </div>
+          <h3 class="card-title">Esnek Öğrenme</h3>
+          <p class="card-text">
+            Yoğun tempoya uygun akşam/hafta sonu seçenekleri; evden canlı ders.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">
+            <i class="fas fa-book-open" aria-hidden="true"></i>
+          </div>
+          <h3 class="card-title">Kapsamlı İçerik</h3>
+          <p class="card-text">
+            Tecvid, mahreç, ezber ve anlam odaklı interaktif materyaller.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section (reworked) -->
+  <section class="section section--muted">
+    <div class="container">
+      <div class="testimonial-card">
+        <p class="testimonial-quote">
+          “Kuranogren-ikra sayesinde Kur’an bilgim çok arttı! İşten sonra camiye
+          gitmeden evden rahatça ders alabildim.”
+        </p>
+        <div class="testimonial-person">
+          <img src="assets/anonym-3.png" alt="Ali" />
+          <div>
+            <div class="testimonial-name">Ali</div>
+            <div class="testimonial-role">Öğretmen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

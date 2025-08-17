@@ -1,0 +1,57 @@
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-image-wrapper">
+    <img src="assets/hizm.jpg" alt="İletişim" class="hero-image" />
+    <h1 class="hero-heading">İletişim</h1>
+  </div>
+</section>
+
+<!-- CONTACT METHODS (animated cards) -->
+<section class="band band--alt">
+  <div class="contact-head">
+    <h2>Bizimle bağlantı kurun</h2>
+    <p>Size en uygun kanalı seçin: telefon, WhatsApp veya sosyal medya.</p>
+  </div>
+
+  <div class="contact-grid">
+    <a class="contact-card"
+       *ngFor="let c of contacts; let i = index"
+       [class]="'contact-card contact--' + c.theme"
+       [href]="c.href"
+       [attr.target]="isExternal(c.href) ? '_blank' : null"
+       [attr.rel]="isExternal(c.href) ? 'noopener' : null"
+       [style.animationDelay]="(i * 80) + 'ms'">
+      <span class="glow"></span>
+      <div class="icon">
+        <i [class]="c.icon"></i>
+      </div>
+      <div class="meta">
+        <h4>{{ c.label }}</h4>
+        <p>{{ c.desc }}</p>
+      </div>
+      <div class="chev" aria-hidden="true">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- MAP BAND (Wiener Neustadt, Österreich) -->
+<section class="band band--soft">
+  <div class="map-wrap">
+    <div class="map-card">
+      <div class="map-head">
+        <h3>Konum</h3>
+        <p>{{ address }}</p>
+      </div>
+      <div class="map-embed">
+        <iframe
+          src="https://maps.google.com/?q=Wiener%20Neustadt%2C%20%C3%96sterreich&z=12&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Harita">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+<footer class="app-footer" role="contentinfo">
+  <div class="footer-outer">
+    <div class="footer-inner">
+      <!-- Brand / Title (same style language as header) -->
+      <div class="footer-brand">
+        <a class="footer-title" [routerLink]="['/anasayfa']" rel="home">
+          <span class="ikra">ikra</span> education online
+        </a>
+      </div>
+
+      <!-- Footer navigation (incl. Impressum) -->
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a [routerLink]="['/hizmetlerimiz']">Hizmetlerimiz</a></li>
+          <li><a [routerLink]="['/fiyatlar']">Fiyatlar</a></li>
+          <li><a [routerLink]="['/deneyimler']">Deneyimler</a></li>
+          <li><a [routerLink]="['/iletisim']">İletişim</a></li>
+          <li><a [routerLink]="['/impressum']">Impressum</a></li>
+        </ul>
+      </nav>
+
+      <!-- Social icons on the right -->
+      <div class="footer-social">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

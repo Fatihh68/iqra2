@@ -1,0 +1,107 @@
+/***********************************************************
+ * Overall header container
+ ***********************************************************/
+ .app-header {
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16.7345px; /* approximate from WP data */
+    line-height: 26.7752px;
+    color: #292929;        /* rgb(41, 41, 41) */
+    /* Reduced from 32px to 20px to tighten space */
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  /***********************************************************
+   * .header-outer 
+   * Full width container
+   ***********************************************************/
+  .header-outer {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* If you want side padding, uncomment:
+       padding-left: 16px;
+       padding-right: 16px;
+    */
+  }
+  
+  /***********************************************************
+   * .header-inner 
+   * The inner container that gets max-width + flex layout
+   ***********************************************************/
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    column-gap: 32px;
+  }
+  
+  /***********************************************************
+   * The "kuranogren-ikra" H1
+   ***********************************************************/
+  .header-title {
+    margin: 0; 
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    line-height: 23px; /* matches WP data for the H1 itself */
+  }
+  
+  .header-title a {
+    color: #292929; /* rgb(41, 41, 41) */
+    cursor: pointer;
+    display: inline;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;       /* from your WP data */
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 23px;     /* ensures a slightly tighter line */
+    text-decoration: none; /* no underline by default */
+    text-decoration-color: #292929;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-transform: uppercase;
+    text-underline-offset: 3px;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  /***********************************************************
+   * Navigation (header-nav)
+   ***********************************************************/
+  .header-nav ul {
+    display: flex;
+    flex-wrap: wrap; /* or 'nowrap' if you never want them to break */
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    column-gap: 32px;
+  }
+  
+  /* Each link item */
+  .header-nav ul li a {
+    /* Copied your WordPress-like style */
+    color: #292929; 
+    cursor: pointer;
+    display: inline;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: auto;
+    line-height: 25.6px;
+    text-align: left;
+    text-decoration: none;
+    text-underline-offset: 2.4px;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+    /* Optional: you can add letter-spacing here if needed */
+  }
+  

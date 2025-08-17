@@ -1,0 +1,72 @@
+:root {
+  --ink:#292929;
+  --muted:#6b7280;
+  --line:#eee;
+}
+
+/* Whole footer */
+.app-footer{
+  background:#fff;
+  border-top:1px solid var(--line);
+  padding:16px 0;
+  color:var(--ink);
+  font-family:'Mulish',sans-serif;
+}
+
+/* Width container */
+.footer-outer{ width:100%; }
+.footer-inner{
+  max-width:1280px;
+  margin:0 auto;
+  padding:0 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  flex-wrap:wrap;  /* stacks on small screens */
+}
+
+/* Brand (match header look) */
+.footer-title{
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:-0.4px;
+  text-transform:uppercase;
+  color:var(--ink);
+  text-decoration:none;
+  line-height:1;
+}
+
+.footer-title:hover{ opacity:.85; }
+
+/* Nav */
+.footer-nav ul{
+  list-style:none;
+  margin:0; padding:0;
+  display:flex; gap:20px; flex-wrap:wrap;
+}
+.footer-nav a{
+  color:var(--ink);
+  text-decoration:none;
+  font-size:16px;
+  line-height:1.6;
+}
+.footer-nav a:hover{ color:#555; }
+
+/* Social */
+.footer-social{ display:flex; gap:14px; }
+.footer-social a{
+  color:var(--ink);
+  font-size:20px;
+  text-decoration:none;
+}
+.footer-social a:hover{ color:#555; }
+
+/* Small screens: stack brand, nav, social nicely */
+@media (max-width: 720px){
+  .footer-inner{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+}

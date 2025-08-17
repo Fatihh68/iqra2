@@ -1,0 +1,38 @@
+<section class="impressum">
+  <header class="hero">
+    <h1>Impressum</h1>
+    <p class="sub">Angaben gemäß § 5 ECG und § 25 MedienG (kleine Website).</p>
+  </header>
+
+  <!-- §5 ECG -->
+  <section class="card">
+    <h2>§ 5 ECG</h2>
+    <dl class="kv">
+      <ng-container *ngFor="let r of ecgRows">
+        <dt>{{ r.k }}</dt>
+        <dd>
+          <ng-container [ngSwitch]="r.k">
+            <a *ngSwitchCase="'E-Mail'" [href]="toMail(r.v)">{{ r.v }}</a>
+            <a *ngSwitchCase="'Telefon'" [href]="toTel(r.v)">{{ r.v }}</a>
+            <span *ngSwitchDefault>{{ r.v }}</span>
+          </ng-container>
+        </dd>
+      </ng-container>
+    </dl>
+  </section>
+
+  <!-- §25 MedienG -->
+  <section class="card">
+    <h2>§ 25 MedienG</h2>
+    <dl class="kv">
+      <dt>Medieninhaber</dt>
+      <dd>{{ medieninhaber }}</dd>
+
+      <dt>Unternehmensgegenstand</dt>
+      <dd>{{ unternehmensgegenstand }}</dd>
+
+      <dt>Blattlinie</dt>
+      <dd>{{ blattlinie }}</dd>
+    </dl>
+  </section>
+</section>
