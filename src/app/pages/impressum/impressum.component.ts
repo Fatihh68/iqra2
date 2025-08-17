@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-impressum',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './impressum.component.html',
-  styleUrls: ['./impressum.component.css']
+    selector: 'app-impressum',
+    imports: [CommonModule],
+    templateUrl: './impressum.component.html',
+    styleUrls: ['./impressum.component.css']
 })
 export class ImpressumComponent {
   // Pflichtangaben (§ 5 ECG)

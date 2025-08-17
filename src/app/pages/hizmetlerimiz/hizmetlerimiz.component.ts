@@ -3,11 +3,10 @@ import { Component, AfterViewInit, OnDestroy, inject, PLATFORM_ID } from '@angul
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-hizmetlerimiz',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
-  templateUrl: './hizmetlerimiz.component.html',
-  styleUrls: ['./hizmetlerimiz.component.css']
+    selector: 'app-hizmetlerimiz',
+    imports: [CommonModule, RouterLink],
+    templateUrl: './hizmetlerimiz.component.html',
+    styleUrls: ['./hizmetlerimiz.component.css']
 })
 export class HizmetlerimizComponent implements AfterViewInit, OnDestroy {
   private router = inject(Router);

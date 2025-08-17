@@ -10,11 +10,10 @@ type Contact = {
 };
 
 @Component({
-  selector: 'app-iletisim',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './iletisim.component.html',
-  styleUrls: ['./iletisim.component.css']
+    selector: 'app-iletisim',
+    imports: [CommonModule],
+    templateUrl: './iletisim.component.html',
+    styleUrls: ['./iletisim.component.css']
 })
 export class IletisimComponent {
   // Updated values

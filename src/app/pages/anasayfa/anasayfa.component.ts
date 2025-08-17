@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-anasayfa',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
-  templateUrl: './anasayfa.component.html',
-  styleUrl: './anasayfa.component.css'
+    selector: 'app-anasayfa',
+    imports: [CommonModule, RouterModule],
+    templateUrl: './anasayfa.component.html',
+    styleUrl: './anasayfa.component.css'
 })
 export class AnasayfaComponent {
   constructor() { }

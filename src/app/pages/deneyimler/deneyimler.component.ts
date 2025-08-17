@@ -12,11 +12,10 @@ type Testimonial = {
 };
 
 @Component({
-  selector: 'app-deneyimler',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
-  templateUrl: './deneyimler.component.html',
-  styleUrls: ['./deneyimler.component.css']
+    selector: 'app-deneyimler',
+    imports: [CommonModule, RouterLink],
+    templateUrl: './deneyimler.component.html',
+    styleUrls: ['./deneyimler.component.css']
 })
 export class DeneyimlerComponent {
   private router = inject(Router);

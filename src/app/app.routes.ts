@@ -15,19 +15,23 @@ export const routes: Routes = [
   { path: 'fiyatlar', component: FiyatlarComponent },
   { path: 'deneyimler', component: DeneyimlerComponent },
   { path: 'iletisim', component: IletisimComponent },
-    { path: 'impressum', component: ImpressumComponent },
+  { path: 'impressum', component: ImpressumComponent },
+
   // Default redirect
   { path: '', redirectTo: '/anasayfa', pathMatch: 'full' },
-  // Wildcard for unknown routes (optional, but often helpful)
+
+  // Wildcard for unknown routes
   { path: '**', redirectTo: '/anasayfa' }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {
+      errorHandler: (error) => {
+        console.error('Navigation error:', error);
+      }
+    })
   ],
-  exports: [
-    RouterModule
-  ]
+  exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
