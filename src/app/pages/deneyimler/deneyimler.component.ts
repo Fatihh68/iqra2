@@ -13,7 +13,8 @@ type Testimonial = {
 
 @Component({
     selector: 'app-deneyimler',
-    imports: [CommonModule, RouterLink],
+    imports: [CommonModule],
+    standalone: true,
     templateUrl: './deneyimler.component.html',
     styleUrls: ['./deneyimler.component.css']
 })

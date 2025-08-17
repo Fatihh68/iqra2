@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 @Component({
     selector: 'app-anasayfa',
     imports: [CommonModule, RouterModule],
+    standalone: true,
     templateUrl: './anasayfa.component.html',
     styleUrl: './anasayfa.component.css'
 })

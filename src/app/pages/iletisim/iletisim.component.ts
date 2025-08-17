@@ -12,6 +12,7 @@ type Contact = {
 @Component({
     selector: 'app-iletisim',
     imports: [CommonModule],
+    standalone: true,
     templateUrl: './iletisim.component.html',
     styleUrls: ['./iletisim.component.css']
 })
