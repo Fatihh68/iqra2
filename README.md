@@ -1,6 +1,6 @@
 # OnlineEducation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5. and later upgradet to Angular Version 22.x.x
 
 ## Development server
 
