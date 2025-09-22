@@ -114,3 +114,37 @@
 
 /* FA helper */
 .fas, .fab{ line-height:1; }
+/* Email card theme */
+.contact--mail .icon {
+  background:#f3f6ff;
+  color:#0052cc;
+}
+
+/* Register info box */
+.register-info {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.2rem;
+  background: #fff;
+  border: 1px solid #e9eef1;
+  border-radius: var(--r);
+  box-shadow: 0 1px 3px rgba(0,0,0,.04);
+  color: #444;
+}
+.register-info h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+.register-info ul {
+  margin: .4rem 0 .8rem;
+  padding-left: 1.2rem;
+}
+.register-info li {
+  margin: .25rem 0;
+}
+/* make long emails/URLs wrap nicely inside cards */
+.contact-card .meta p{
+  overflow-wrap: anywhere;   /* NEW */
+  word-break: break-word;    /* NEW (fallback) */
+}
