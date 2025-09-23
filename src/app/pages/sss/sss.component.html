@@ -1,0 +1,36 @@
+<!-- HERO (banner with overlay title) -->
+<section class="hero-section">
+  <div class="hero-image-wrapper">
+    <img src="assets/hizm.jpg" alt="Sık Sorulan Sorular" class="hero-image" />
+    <h1 class="hero-heading">Sık Sorulan Sorular</h1>
+  </div>
+</section>
+
+<!-- FAQ (accordion) -->
+<section class="band band--soft">
+  <div class="faq-wrap">
+    @for (f of faqs; track f.q; let i = $index) {
+      <div class="faq-item">
+        <button type="button"
+                class="faq-q"
+                (click)="toggle(i)"
+                [attr.aria-expanded]="isOpen(i)">
+          <span class="q-text">{{ f.q }}</span>
+          <span class="chev" [class.open]="isOpen(i)" aria-hidden="true">⌄</span>
+        </button>
+
+        @if (isOpen(i)) {
+          <div class="faq-a">
+            @if (isArray(f.a)) {
+              <ul>
+                @for (item of f.a; track $index) { <li>{{ item }}</li> }
+              </ul>
+            } @else {
+              <p>{{ f.a }}</p>
+            }
+          </div>
+        }
+      </div>
+    }
+  </div>
+</section>

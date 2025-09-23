@@ -16,6 +16,8 @@ export const routes: Routes = [
   { path: 'deneyimler', component: DeneyimlerComponent },
   { path: 'iletisim', component: IletisimComponent },
   { path: 'impressum', component: ImpressumComponent },
+  { path: 'sss', loadComponent: () => import('./pages/sss/sss.component').then(m => m.SssComponent) },
+
 
   // Default redirect
   { path: '', redirectTo: '/anasayfa', pathMatch: 'full' },
